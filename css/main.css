@@ -1,0 +1,186 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo de body */
+
+body {
+    background-color: #bfd7dd;
+}
+
+main nav ul{
+    list-style: none;
+    margin: 3rem;
+}
+
+/* estilo de header */
+header p {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* estilos de main */
+
+main .banner-mobile {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .banner-desktop {
+    display: none;
+}
+
+main h1 {
+    text-align: center;
+    margin: 5rem;
+}
+
+main .destacados {
+    height: 30%;
+    width: 30%;
+
+}
+
+/* estilos de section */
+
+section div p {
+    text-align: center;
+}
+
+section div .precios span {
+    display: block;
+}
+
+
+section div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+
+
+/* estilos de Productos */
+main .texto {
+    text-align: center;
+    background-color: #a7bfc5;
+    padding: 1rem;
+}
+
+main div img {
+    height: 80vh;
+    height: 31%;
+    width: 31%;
+    object-fit: cover;
+    padding: auto;
+    margin: 0.25rem;
+}
+
+main .img-uno {
+    display: none;
+}
+
+main .img-tres {
+    display: none;
+}
+
+
+
+/* estilos de footer */
+footer {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+/* mq */
+
+@media screen and (min-width:600px) {
+
+    /* estilos de main */
+
+    main div .banner-desktop {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    main .banner-mobile {
+        display: none;
+    }
+
+    main div img {
+        height: 100%;
+        width: 100%;
+    }
+
+    main .img-uno {
+        display: block;
+    }
+
+    main .img-tres {
+        display: block;
+    }
+    
+    /* estilos de section */
+
+    section div img {
+        width: 30%;
+        height: 30%;
+        object-fit: cover;
+    }
+
+    section div img {
+        display: flex;
+    }
+
+    section .div-img {
+        height: 40vh;
+        height: 60%;
+        width: 60%;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-left: 3rem;
+    }
+
+    section div .precios{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    /* estilos de productos */
+
+    main div{
+        display: flex;
+    }
+
+    main div img{
+        height: 18%;
+        width: 18%;
+        object-fit: cover;
+        gap: 1rem;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    /* estilos de sobre nosotros */
+
+    .lorem{
+        text-align: center;
+        margin: 2rem;
+    }
+}
