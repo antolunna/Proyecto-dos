@@ -1,0 +1,11 @@
+//import de mixin
+@import "../utilidades/mixin";
+
+/*estilos de footer*/
+footer{
+    text-align: center;
+    background-color: $color-general;
+    color: $color-principal;
+    padding: 1rem;
+    margin-top: 4rem;
+}

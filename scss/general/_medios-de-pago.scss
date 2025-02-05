@@ -1,0 +1,23 @@
+//import de mixin
+@import "../utilidades/mixin";
+
+/*estilos de medios de pago*/
+.envios {
+    height: 15vh;
+    div {
+        .img-medios {
+            @include medidas (25%, 25%);
+            object-fit: cover;
+        }
+    }
+}
+
+.medios-de-pago {
+    height: 40vh;
+
+    .tarjetas {
+        @include medidas (25%, 25%);
+        object-fit: cover;
+        margin-left: 3.3rem;
+    }
+}

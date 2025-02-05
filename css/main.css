@@ -1,256 +1,368 @@
 /* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* estilo de body */
-
 body {
-    background-color: #bfd7dd;
+  background-color: #d3d3d3;
 }
 
-section nav ul {
-    list-style: none;
+/*estilos de botones*/
+.boton nav ul {
+  list-style: none;
+}
+.boton nav ul li .boton {
+  padding: 1rem;
+  margin: 1rem;
+  color: black;
+  display: block;
+  margin: auto;
+  background-color: #7a7a7a;
+}
+.boton nav ul li .boton-dos {
+  background-color: #7a7a7a;
+  padding: 1rem;
+  margin: 5rem;
+  color: black;
+  display: block;
+  margin: auto;
 }
 
-section nav ul li .btn {
-    background-color: #d7f0f6;
-    padding: 1rem;
-    margin: 3rem;
-    color: black;
-    margin-left: 175px;
+/*estilos de header*/
+header .navbar ul li .boton-active:active {
+  background-color: #979797;
 }
-
-section nav ul li .boton {
-    background-color: #d7f0f6;
-    padding: 1rem;
-    margin: 3rem;
-    color: black;
-    margin-left: 210px;
+header .navbar ul li .boton-active:hover {
+  background-color: #979797;
 }
-
-/* estilo de header */
 header p {
-    background-color: black;
-    color: whitesmoke;
-    text-align: center;
-    padding: 1rem;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1rem;
 }
 
-/* estilos de main */
-
-main div .banner-mobile {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+/*estilos de main*/
+.main-inicio {
+  height: 80vh;
+}
+.main-inicio div .banner-mobile {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.main-inicio .banner-tablet {
+  display: none;
+}
+.main-inicio h1 {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: black;
+  color: whitesmoke;
 }
 
-main .banner-desktop {
-    display: none;
+/*estilos de section*/
+.section-grid .div-img {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 70% 70% 70%;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 35%;
+}
+.section-grid .div-img img {
+  height: 40%;
+  width: 40%;
+  object-fit: cover;
+}
+.section-grid .tres {
+  grid-column: span 2;
 }
 
-main h1 {
-    text-align: center;
-    margin: 3rem;
+/*estilos de productos*/
+main p {
+  text-align: center;
+  background-color: #b5b5b5;
+  padding: 1rem;
+  color: black;
+}
+main .ropa .img-dos, main .ropa .img-cuatro, main .ropa .img-cinco {
+  height: 30%;
+  width: 32%;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
-/* estilos de section */
-
-section div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/*estilos de sobre nosotros*/
+.lorem h4 {
+  text-align: center;
+}
+.lorem h4 span {
+  display: block;
 }
 
-section div {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 35%);
-    row-gap: 1rem;
-    padding: 1rem;
-    margin-bottom: 15%;
-
-}
-
-section div .cuatro {
-    display: none;
-}
-
-/* estilos de Productos */
-main .texto {
-    text-align: center;
-    background-color: #a7bfc5;
-    padding: 1rem;
-}
-
-main .ropa img {
-    height: 25%;
-    width: 25%;
-    object-fit: cover;
-    margin: 0.5rem;
-    margin-left: 1.5rem;
-    margin-bottom: 1.5rem;
-
-}
-
-main .img-uno {
-    display: none;
-}
-
-main .img-tres {
-    display: none;
-}
-
-/* estilos de sobre nosotros */
-.lorem p {
-    text-align: center;
-    margin: 3rem;
-    height: 52.9vh;
-}
-
-/* estilos de contactanos */
+/* estilo de contactanos*/
 .contacto {
-    text-align: center;
-    margin: 5rem;
-    height: 46.2vh;
+  text-align: center;
+  margin-top: 2rem;
+}
+.contacto .telefono {
+  background-color: #d3d3d3;
+  color: black;
+}
+.contacto .gmail {
+  background-color: #d3d3d3;
+  color: black;
+}
+.contacto .ubicacion {
+  margin-top: 4rem;
+}
+.contacto .horarios {
+  margin: 1rem;
+}
+.contacto .horarios span {
+  display: block;
 }
 
-/* estilos de medios de pago */
-
-header div .img-medios {
-    margin: 4rem;
+/*estilos de medios de pago*/
+.envios {
+  height: 15vh;
+}
+.envios div .img-medios {
+  height: 25%;
+  width: 25%;
+  object-fit: cover;
 }
 
-header h3 {
-    text-align: center;
+.medios-de-pago {
+  height: 40vh;
+}
+.medios-de-pago .tarjetas {
+  height: 25%;
+  width: 25%;
+  object-fit: cover;
+  margin-left: 3.3rem;
 }
 
-main .medios-de-pago {
-    height: 15%;
-    width: 15%;
-    object-fit: cover;
-    margin: 2.6rem;
-}
-
-/* estilos de footer */
+/*estilos de footer*/
 footer {
-    text-align: center;
-    background-color: black;
-    color: whitesmoke;
-    padding: 1rem;
+  text-align: center;
+  background-color: black;
+  color: #d3d3d3;
+  padding: 1rem;
+  margin-top: 4rem;
 }
 
-
-/* mq */
-
-@media screen and (min-width:1024px) {
-
-    /* estilos de main */
-
-    main div .banner-desktop {
-        display: block;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    main .banner-mobile {
-        display: none;
-    }
-
-    main div img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    /* estilos de section */
-
-    section div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    section div .cuatro {
-        display: block;
-    }
-
-    section div {
-        height: 60vh;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 60% 70%;
-    }
-
-    section .cuatro,
-    .tres {
-        grid-row: span 2;
-    }
-
-    section .dos,
-    .uno {
-        grid-template-columns: span 1;
-    }
-
-
-    /* estilos de productos */
-    main .img-uno,
-    main .img-tres {
-        display: block;
-    }
-
-    main div {
-        display: flex;
-    }
-
-    main .ropa img {
-        height: 18%;
-        width: 18%;
-        object-fit: cover;
-        margin: auto;
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    /* estilos de medios de pago */
-
-    header div .img-medios {
-        height: 20%;
-        width: 20%;
-        object-fit: cover;
-        margin-left: 38%;
-    }
-
-    header h3 {
-        text-align: center;
-    }
-
-    main .medios-de-pago {
-        height: 9%;
-        width: 9%;
-        object-fit: cover;
-        margin-left: 20rem;
-        margin-top: 5rem;
-    }
-
-    /* estilos de botones */
-    section nav ul li .btn {
-        background-color: #d7f0f6;
-        padding: 1rem;
-        margin: 3rem;
-        color: black;
-        margin-left: 875px;
-    }
-
-    section nav ul li .boton {
-        background-color: #d7f0f6;
-        align-items: center;
-        padding: 1rem;
-        margin-left: 915px;
-    }
-
+/*estilos de tablet*/
+@media screen and (min-width: 600px) {
+  /*estilos de main*/
+  .main-inicio {
+    height: 55vh;
+  }
+  .main-inicio .banner-mobile {
+    display: none;
+  }
+  .main-inicio h1 {
+    margin-top: 5rem;
+  }
+  .main-inicio div .banner-tablet {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .main-inicio div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
+/*estilos de section*/
+.section-grid div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40% 40% 40%;
+}
+.section-grid div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.section-grid .tres {
+  grid-row: span 2;
+}
+.section-grid .dos,
+.section-grid .uno {
+  grid-template-columns: span 1;
+}
+
+/*estilos de productos*/
+main .ropa .img-uno, main .ropa .img-tres, main .ropa .img-cuatro, main .ropa .img-dos, main .ropa .img-cinco {
+  height: 30%;
+  width: 32%;
+  object-fit: cover;
+  margin: auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* estilo de contactanos*/
+.contacto {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/*estilos de medio de pago*/
+.envios div .img-medios {
+  height: 20%;
+  width: 20%;
+  object-fit: cover;
+  margin-left: 38%;
+}
+.envios h3 {
+  text-align: center;
+}
+
+.medios-de-pago .tarjetas {
+  height: 9%;
+  width: 9%;
+  object-fit: cover;
+  margin-left: 19%;
+  margin-top: 5rem;
+}
+
+/*estilo de sobre nosotros*/
+.lorem {
+  height: 100vh;
+}
+
+/*estilos de botones*/
+.boton nav ul {
+  list-style: none;
+}
+.boton nav ul li .boton-dos {
+  background-color: #d3d3d3;
+  padding: 1rem;
+  margin: 3rem;
+  color: black;
+  display: block;
+  margin: auto;
+}
+.boton nav ul li .boton {
+  background-color: #d3d3d3;
+  align-items: center;
+  display: block;
+  margin: auto;
+}
+
+/*estilos de desktop*/
+@media screen and (min-width: 1024px) {
+  /*estilos de main*/
+  .main-inicio {
+    height: 100vh;
+  }
+  .main-inicio .banner-mobile {
+    display: none;
+  }
+  .main-inicio div .banner-tablet {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/*estilos de section*/
+.section-grid .div-img {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 70% 70% 70%;
+  margin-top: 8%;
+}
+.section-grid .div-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+.section-grid .grid-cuatro {
+  grid-row: span 2;
+}
+.section-grid .tres {
+  grid-row: span 2;
+  grid-column: 1;
+}
+.section-grid .uno, .section-grid .dos {
+  grid-column: span 1;
+}
+
+/*estilos de productos*/
+main div {
+  display: flex;
+}
+main .ropa img {
+  height: 30%;
+  width: 32%;
+  object-fit: cover;
+  margin: auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* estilo de contactanos*/
+.contacto {
+  text-align: center;
+  height: 68vh;
+  margin-top: 2rem;
+}
+
+/*estilos de medio de pago*/
+.envios {
+  height: 65vh;
+}
+.envios div .img-medios {
+  height: 24%;
+  width: 24%;
+  object-fit: cover;
+  margin-left: 38%;
+}
+.envios h3 {
+  text-align: center;
+}
+
+.medios-de-pago .tarjetas {
+  height: 9%;
+  width: 9%;
+  object-fit: cover;
+  margin-left: 19%;
+  margin-top: 5rem;
+}
+
+/*estilo de sobre nosotros*/
+/*estilos de botones*/
+.boton nav ul {
+  list-style: none;
+}
+.boton nav ul li .boton-dos {
+  background-color: #d3d3d3;
+  padding: 1rem;
+  margin: 3rem;
+  color: black;
+  display: block;
+  margin: auto;
+}
+.boton nav ul li .boton {
+  background-color: #d3d3d3;
+  align-items: center;
+  margin-top: 15rem;
+  display: block;
+  margin: auto;
+}
+
+/*# sourceMappingURL=main.css.map */

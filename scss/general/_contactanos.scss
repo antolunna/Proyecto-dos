@@ -1,0 +1,31 @@
+//import de mixin
+@import "../utilidades/mixin";
+
+/* estilo de contactanos*/
+.contacto {
+    text-align: center;
+    margin-top: 2rem;
+
+    .telefono {
+        background-color: $color-principal;
+        color: $color-general;
+    }
+
+    .gmail {
+        background-color: $color-principal;
+        color: $color-general;
+    }
+
+
+    .ubicacion {
+        margin-top: 4rem;
+    }
+
+    .horarios {
+        margin: 1rem;
+    }
+
+    .horarios span {
+        display: block;
+    }
+}

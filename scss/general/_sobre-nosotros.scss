@@ -1,0 +1,12 @@
+//import de mixin 
+@import "../utilidades/mixin";
+
+/*estilos de sobre nosotros*/
+.lorem {
+    h4 {
+        text-align: center;
+        span{
+            display: block;
+        }
+    }
+}

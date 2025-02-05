@@ -1,0 +1,23 @@
+//import de mixin 
+@import "../utilidades/mixin";
+
+/*estilos de productos*/
+main {
+    p {
+        text-align: center;
+        background-color: $color-detalles;
+        padding: 1rem;
+        color: $color-general;
+
+    }
+
+    .ropa {
+        .img-dos, .img-cuatro, .img-cinco{
+            @include medidas (30%, 32%);
+            object-fit: cover;
+            margin-bottom: 1rem;
+        
+
+        }
+    }
+}

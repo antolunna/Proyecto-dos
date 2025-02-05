@@ -1,0 +1,104 @@
+//import de mixin
+@import "../utilidades/mixin";
+
+
+/*estilos de botones*/
+.boton {
+    nav {
+        ul {
+            list-style: none;
+
+            li {
+                .boton {
+                    @include padding-margin (1rem, 1rem);
+                    color: $color-general;
+                    display: block;
+                    margin: auto;
+                    background-color: $color-detalles-tres;
+                }
+
+                .boton-dos {
+                    background-color: $color-detalles-tres;
+                    @include padding-margin (1rem, 5rem);
+                    color: $color-general;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+/*estilos de header*/
+header {
+    .navbar {
+
+        ul {
+            li {
+
+                .boton-active:active {
+                    background-color: $color-detalles-dos;
+                }
+
+                .boton-active:hover {
+                    background-color: $color-detalles-dos;
+                }
+
+            }
+        }
+    }
+
+    p {
+        background-color: $color-general;
+        color: whitesmoke;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+/*estilos de main*/
+.main-inicio {
+    height: 80vh;
+
+    div {
+        .banner-mobile {
+            @include medidas (100%, 100%);
+            object-fit: cover;
+        }
+
+    }
+
+    .banner-tablet {
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 3rem;
+        padding: 2rem;
+        background-color: $color-general;
+        color: whitesmoke;
+    }
+}
+
+/*estilos de section*/
+.section-grid {
+
+    .div-img {
+        height: 100vh;
+        @include grid (grid, repeat(3, 1fr), 70% 70% 70%);
+        gap: 0.5rem;
+        padding: 0.5rem;
+        margin-bottom: 35%;
+
+        img {
+            @include medidas (40%, 40%);
+            object-fit: cover;
+        }
+    }
+
+    .tres {
+        grid-column: span 2;
+    }
+
+}

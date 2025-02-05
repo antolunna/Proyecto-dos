@@ -1,0 +1,131 @@
+//import de mixin
+@import "../utilidades/mixin";
+
+/*estilos de tablet*/
+@media screen and (min-width:600px) {
+
+
+    /*estilos de main*/
+
+    .main-inicio {
+        height: 55vh;
+
+        .banner-mobile {
+            display: none;
+        }
+
+        h1 {
+            margin-top: 5rem;
+        }
+
+        div {
+            .banner-tablet {
+                display: block;
+                @include medidas (100%, 100%);
+                object-fit: cover;
+            }
+
+            img {
+                @include medidas (100%, 100%);
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/*estilos de section*/
+.section-grid {
+    div {
+        @include grid (grid, repeat(3, 1fr), 40% 40% 40%);
+
+
+        img {
+            @include medidas (100%, 100%);
+            object-fit: cover;
+        }
+
+    }
+
+    .tres {
+        grid-row: span 2;
+    }
+
+    .dos,
+    .uno {
+        grid-template-columns: span 1;
+    }
+}
+
+/*estilos de productos*/
+main {
+    .ropa {
+        .img-uno, .img-tres, .img-cuatro, .img-dos, .img-cinco {
+            @include medidas (30%, 32%);
+            object-fit: cover;
+            margin: auto;
+            gap: 1rem;
+            padding: 1rem;
+        }
+    }
+}
+
+/* estilo de contactanos*/
+.contacto {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*estilos de medio de pago*/
+.envios {
+    div {
+        .img-medios {
+            @include medidas (20%, 20%);
+            object-fit: cover;
+            margin-left: 38%;
+        }
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.medios-de-pago {
+    .tarjetas {
+        @include medidas (9%, 9%);
+        object-fit: cover;
+        margin-left: 19%;
+        margin-top: 5rem;
+    }
+}
+
+/*estilo de sobre nosotros*/
+.lorem {        
+        height: 100vh;
+
+}
+
+/*estilos de botones*/
+.boton {
+    nav {
+        ul {
+            list-style: none;
+            li {
+                .boton-dos {
+                    background-color: $color-principal;
+                    @include padding-margin (1rem, 3rem);
+                    color: $color-general;
+                    display: block;
+                    margin: auto;
+                }
+
+                .boton {
+                    background-color: $color-principal;
+                    align-items: center;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

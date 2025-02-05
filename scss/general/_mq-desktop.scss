@@ -1,0 +1,133 @@
+//import de mixin
+@import "../utilidades/mixin";
+
+/*estilos de desktop*/
+@media screen and (min-width:1024px) {
+
+    /*estilos de main*/
+
+    .main-inicio {
+        height: 100vh;
+        
+        .banner-mobile {
+            display: none;
+        }
+
+        div {
+            .banner-tablet {
+                display: block;
+                @include medidas (100%, 100%);
+                object-fit: cover;
+            }
+
+        }
+    }
+}
+
+/*estilos de section*/
+.section-grid {
+    .div-img {
+        height: 50vh;
+        @include grid (grid, repeat(3, 1fr), 70% 70% 70% );
+        margin-top: 8%;
+
+
+
+        img {
+            @include medidas (100%, 100%);
+            object-fit: cover;
+            display: block;
+            margin: auto;
+        }
+    }
+        
+        .grid-cuatro{
+            grid-row: span 2;
+        }
+        .tres{
+            grid-row: span 2;
+            grid-column: 1;
+        }
+        .uno, .dos{
+            grid-column: span 1;
+        }
+
+}
+
+/*estilos de productos*/
+main {
+
+
+    div {
+        display: flex;
+    }
+
+    .ropa {
+        img {
+            @include medidas (30%, 32%);
+            object-fit: cover;
+            margin: auto;
+            gap: 1rem;
+            padding: 1rem;
+        }
+    }
+}
+
+/* estilo de contactanos*/
+.contacto{
+    text-align: center;
+    height: 68vh;
+    margin-top: 2rem;
+}
+
+/*estilos de medio de pago*/
+.envios {
+    height: 65vh;
+    div {
+        .img-medios {
+            @include medidas (24%, 24%);
+            object-fit: cover;
+            margin-left: 38%;
+        }
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.medios-de-pago {
+    .tarjetas {
+        @include medidas (9%, 9%);
+        object-fit: cover;
+        margin-left: 19%;
+        margin-top: 5rem;
+    }
+}
+/*estilo de sobre nosotros*/
+
+/*estilos de botones*/
+.boton {
+    nav {
+        ul {
+            list-style: none;
+            li {
+                .boton-dos {
+                    background-color: $color-principal;
+                    @include padding-margin (1rem, 3rem);
+                    color: $color-general;
+                    display: block;
+                    margin: auto;
+                }
+
+                .boton {
+                    background-color: $color-principal;
+                    align-items: center;  
+                    margin-top: 15rem; 
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
