@@ -4,7 +4,7 @@
 /* estilo de contactanos*/
 .contacto {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 
     .telefono {
         background-color: $color-principal;
@@ -16,16 +16,26 @@
         color: $color-general;
     }
 
-
     .ubicacion {
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     .horarios {
         margin: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 
     .horarios span {
         display: block;
+    }
+    
+    .table{ 
+        height: 50vh;
+        height: 10%;
+        width: 100%;
+        background-color: $color-detalles-dos;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
     }
 }

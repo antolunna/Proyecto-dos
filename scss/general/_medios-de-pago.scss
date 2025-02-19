@@ -4,6 +4,7 @@
 /*estilos de medios de pago*/
 .envios {
     height: 15vh;
+
     div {
         .img-medios {
             @include medidas (25%, 25%);
@@ -15,9 +16,27 @@
 .medios-de-pago {
     height: 40vh;
 
-    .tarjetas {
-        @include medidas (25%, 25%);
-        object-fit: cover;
-        margin-left: 3.3rem;
+    .paga-como-quieras {
+        text-align: center;
+        background-color: $color-general;
+        color: $color-principal;
+        padding: 1rem;
+        margin-top: 3rem
+    }
+
+    .div-pago {
+        .tarjetas {
+            @include medidas (9%, 9%);
+            object-fit: cover;
+            display: block;
+            margin: auto;
+            margin-top: 5rem;
+        }
+
+        .parrafo-tarjetas {
+            display: block;
+            margin: auto;
+            margin-top: 4rem;
+        }
     }
 }

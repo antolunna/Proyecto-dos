@@ -20,10 +20,10 @@ body {
   color: black;
   display: block;
   margin: auto;
-  background-color: #7a7a7a;
+  background-color: #b5b5b5;
 }
 .boton nav ul li .boton-dos {
-  background-color: #7a7a7a;
+  background-color: #b5b5b5;
   padding: 1rem;
   margin: 5rem;
   color: black;
@@ -32,11 +32,20 @@ body {
 }
 
 /*estilos de header*/
+header .navbar {
+  background-color: #d3d3d3;
+}
+header .navbar .navbar-toggler {
+  background-color: #b5b5b5;
+}
+header .navbar .collapse {
+  background-color: #d3d3d3;
+}
 header .navbar ul li .boton-active:active {
   background-color: #979797;
 }
 header .navbar ul li .boton-active:hover {
-  background-color: #979797;
+  background-color: #b5b5b5;
 }
 header p {
   background-color: black;
@@ -54,44 +63,81 @@ header p {
   width: 100%;
   object-fit: cover;
 }
-.main-inicio .banner-tablet {
+.main-inicio .grid-banner-uno,
+.main-inicio .grid-banner-dos,
+.main-inicio .grid-banner-tres {
   display: none;
 }
 .main-inicio h1 {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 2rem;
   background-color: black;
-  color: whitesmoke;
+  color: #d3d3d3;
+}
+.main-inicio .grid-principal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 45% 45%;
+}
+.main-inicio .grid-principal .grid-banner-uno,
+.main-inicio .grid-principal .grid-banner-dos,
+.main-inicio .grid-principal .grid-banner-tres {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+}
+.main-inicio .grid-principal .grid-banner-uno,
+.main-inicio .grid-principal .grid-banner-dos,
+.main-inicio .grid-principal .grid-banner-tres {
+  grid-row: span 2;
 }
 
 /*estilos de section*/
-.section-grid .div-img {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 70% 70% 70%;
-  gap: 0.5rem;
-  padding: 0.5rem;
-  margin-bottom: 35%;
+.productos-destacados {
+  margin-top: 30%;
+  margin-bottom: 20%;
 }
-.section-grid .div-img img {
-  height: 40%;
-  width: 40%;
-  object-fit: cover;
+.productos-destacados .figure-div .figure {
+  animation-duration: 1s;
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
-.section-grid .tres {
-  grid-column: span 2;
+.productos-destacados .figure-caption {
+  text-align: center;
+}
+.productos-destacados .figure-caption span {
+  display: block;
+}
+.productos-destacados .nuevos-ingresos {
+  animation-duration: 2s;
+  text-align: center;
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: black;
+  color: #d3d3d3;
+}
+.productos-destacados .carousel {
+  margin-top: 4rem;
+}
+.productos-destacados .carousel .carousel-img {
+  display: block;
+  margin: auto;
+  height: 70%;
+  width: 70%;
 }
 
 /*estilos de productos*/
-main p {
+main .texto {
   text-align: center;
   background-color: #b5b5b5;
   padding: 1rem;
   color: black;
 }
-main .ropa .img-dos, main .ropa .img-cuatro, main .ropa .img-cinco {
+main .ropa .img-dos,
+main .ropa .img-cuatro,
+main .ropa .img-cinco {
   height: 30%;
   width: 32%;
   object-fit: cover;
@@ -99,17 +145,32 @@ main .ropa .img-dos, main .ropa .img-cuatro, main .ropa .img-cinco {
 }
 
 /*estilos de sobre nosotros*/
-.lorem h4 {
+.nosotros {
+  height: 100vh;
+}
+.nosotros .grid-nosotros {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 50% 50%;
+  gap: 5rem;
+}
+.nosotros .grid-nosotros .img-grid-nosotros {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 4rem;
+}
+.nosotros .grid-nosotros .img-grid-nosotros .texto-grid {
   text-align: center;
 }
-.lorem h4 span {
+.nosotros .grid-nosotros .img-grid-nosotros .texto-grid span {
   display: block;
 }
 
 /* estilo de contactanos*/
 .contacto {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 .contacto .telefono {
   background-color: #d3d3d3;
@@ -120,13 +181,23 @@ main .ropa .img-dos, main .ropa .img-cuatro, main .ropa .img-cinco {
   color: black;
 }
 .contacto .ubicacion {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 .contacto .horarios {
   margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .contacto .horarios span {
   display: block;
+}
+.contacto .table {
+  height: 50vh;
+  height: 10%;
+  width: 100%;
+  background-color: #979797;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
 }
 
 /*estilos de medios de pago*/
@@ -142,11 +213,25 @@ main .ropa .img-dos, main .ropa .img-cuatro, main .ropa .img-cinco {
 .medios-de-pago {
   height: 40vh;
 }
-.medios-de-pago .tarjetas {
-  height: 25%;
-  width: 25%;
+.medios-de-pago .paga-como-quieras {
+  text-align: center;
+  background-color: black;
+  color: #d3d3d3;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.medios-de-pago .div-pago .tarjetas {
+  height: 9%;
+  width: 9%;
   object-fit: cover;
-  margin-left: 3.3rem;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+.medios-de-pago .div-pago .parrafo-tarjetas {
+  display: block;
+  margin: auto;
+  margin-top: 4rem;
 }
 
 /*estilos de footer*/
@@ -155,7 +240,7 @@ footer {
   background-color: black;
   color: #d3d3d3;
   padding: 1rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 /*estilos de tablet*/
@@ -167,42 +252,31 @@ footer {
   .main-inicio .banner-mobile {
     display: none;
   }
-  .main-inicio h1 {
+  .main-inicio .grid-principal {
+    gap: 0.5rem;
+  }
+  .main-inicio .grid-principal .grid-banner-uno,
+  .main-inicio .grid-principal .grid-banner-dos,
+  .main-inicio .grid-principal .grid-banner-tres {
+    display: block;
+  }
+  .main-inicio .grid-principal .grid-banner-uno,
+  .main-inicio .grid-principal .grid-banner-dos,
+  .main-inicio .grid-principal .grid-banner-tres {
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .main-inicio .grid-principal h1 {
     margin-top: 5rem;
   }
-  .main-inicio div .banner-tablet {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  .main-inicio div img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
 }
-/*estilos de section*/
-.section-grid div {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 40% 40% 40%;
-}
-.section-grid div img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.section-grid .tres {
-  grid-row: span 2;
-}
-.section-grid .dos,
-.section-grid .uno {
-  grid-template-columns: span 1;
-}
-
 /*estilos de productos*/
-main .ropa .img-uno, main .ropa .img-tres, main .ropa .img-cuatro, main .ropa .img-dos, main .ropa .img-cinco {
+main .ropa .img-uno,
+main .ropa .img-tres,
+main .ropa .img-cuatro,
+main .ropa .img-dos,
+main .ropa .img-cinco {
   height: 30%;
   width: 32%;
   object-fit: cover;
@@ -236,11 +310,6 @@ main .ropa .img-uno, main .ropa .img-tres, main .ropa .img-cuatro, main .ropa .i
   margin-top: 5rem;
 }
 
-/*estilo de sobre nosotros*/
-.lorem {
-  height: 100vh;
-}
-
 /*estilos de botones*/
 .boton nav ul {
   list-style: none;
@@ -269,37 +338,45 @@ main .ropa .img-uno, main .ropa .img-tres, main .ropa .img-cuatro, main .ropa .i
   .main-inicio .banner-mobile {
     display: none;
   }
-  .main-inicio div .banner-tablet {
+  .main-inicio .grid-principal {
+    gap: 0.5rem;
+  }
+  .main-inicio .grid-principal .grid-banner-uno,
+  .main-inicio .grid-principal .grid-banner-dos,
+  .main-inicio .grid-principal .grid-banner-tres {
     display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
   }
 }
 /*estilos de section*/
-.section-grid .div-img {
-  height: 50vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 70% 70% 70%;
-  margin-top: 8%;
+.productos-destacados {
+  margin-top: 30%;
+  margin-bottom: 20%;
 }
-.section-grid .div-img img {
-  height: 100%;
+.productos-destacados .figure-div .figure {
   width: 100%;
-  object-fit: cover;
+  max-width: 550px;
+  height: auto;
+}
+.productos-destacados .figure-caption {
+  text-align: center;
+}
+.productos-destacados .figure-caption span {
   display: block;
-  margin: auto;
 }
-.section-grid .grid-cuatro {
-  grid-row: span 2;
+.productos-destacados .nuevos-ingresos {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: black;
+  color: #d3d3d3;
 }
-.section-grid .tres {
-  grid-row: span 2;
-  grid-column: 1;
+.productos-destacados .carousel {
+  margin-top: 4rem;
 }
-.section-grid .uno, .section-grid .dos {
-  grid-column: span 1;
+.productos-destacados .carousel .carousel-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
 
 /*estilos de productos*/
@@ -324,27 +401,31 @@ main .ropa img {
 
 /*estilos de medio de pago*/
 .envios {
-  height: 65vh;
+  height: 55vh;
 }
 .envios div .img-medios {
-  height: 24%;
-  width: 24%;
+  height: 20%;
+  width: 20%;
   object-fit: cover;
-  margin-left: 38%;
-}
-.envios h3 {
-  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
 }
 
-.medios-de-pago .tarjetas {
-  height: 9%;
-  width: 9%;
+.medios-de-pago .paga-como-quieras {
+  text-align: center;
+  background-color: black;
+  color: #d3d3d3;
+  padding: 1rem;
+  margin-top: 7rem;
+}
+.medios-de-pago .div-pago .tarjetas {
+  height: 90px;
+  width: 90px;
   object-fit: cover;
-  margin-left: 19%;
   margin-top: 5rem;
 }
 
-/*estilo de sobre nosotros*/
 /*estilos de botones*/
 .boton nav ul {
   list-style: none;
@@ -356,6 +437,7 @@ main .ropa img {
   color: black;
   display: block;
   margin: auto;
+  margin-top: 30rem;
 }
 .boton nav ul li .boton {
   background-color: #d3d3d3;

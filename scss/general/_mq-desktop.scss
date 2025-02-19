@@ -8,56 +8,65 @@
 
     .main-inicio {
         height: 100vh;
-        
+
         .banner-mobile {
             display: none;
         }
 
-        div {
-            .banner-tablet {
-                display: block;
-                @include medidas (100%, 100%);
-                object-fit: cover;
-            }
+        .grid-principal {
+            gap: 0.5rem;
 
+            .grid-banner-uno,
+            .grid-banner-dos,
+            .grid-banner-tres {
+                display: block;
+            }
         }
     }
 }
 
 /*estilos de section*/
-.section-grid {
-    .div-img {
-        height: 50vh;
-        @include grid (grid, repeat(3, 1fr), 70% 70% 70% );
-        margin-top: 8%;
+.productos-destacados {
+    margin-top: 30%;
+    margin-bottom: 20%;
 
-
-
-        img {
-            @include medidas (100%, 100%);
-            object-fit: cover;
-            display: block;
-            margin: auto;
+    .figure-div {
+        .figure {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
         }
     }
-        
-        .grid-cuatro{
-            grid-row: span 2;
-        }
-        .tres{
-            grid-row: span 2;
-            grid-column: 1;
-        }
-        .uno, .dos{
-            grid-column: span 1;
-        }
 
+    .figure-caption {
+        text-align: center;
+
+        span {
+            display: block;
+        }
+    }
+
+    .nuevos-ingresos {
+        text-align: center;
+        margin-top: 5rem;
+        padding: 2rem;
+        background-color: $color-general;
+        color: $color-principal;
+    }
+
+    .carousel {
+        margin-top: 4rem;
+
+        .carousel-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+    }
 }
 
 /*estilos de productos*/
 main {
-
-
     div {
         display: flex;
     }
@@ -70,11 +79,12 @@ main {
             gap: 1rem;
             padding: 1rem;
         }
+
     }
 }
 
 /* estilo de contactanos*/
-.contacto{
+.contacto {
     text-align: center;
     height: 68vh;
     margin-top: 2rem;
@@ -82,35 +92,44 @@ main {
 
 /*estilos de medio de pago*/
 .envios {
-    height: 65vh;
+    height: 55vh;
+
     div {
         .img-medios {
-            @include medidas (24%, 24%);
+            @include medidas (20%, 20%);
             object-fit: cover;
-            margin-left: 38%;
+            display: block;
+            margin: auto;
+            margin-top: 2rem;
         }
-    }
-
-    h3 {
-        text-align: center;
     }
 }
 
 .medios-de-pago {
-    .tarjetas {
-        @include medidas (9%, 9%);
-        object-fit: cover;
-        margin-left: 19%;
-        margin-top: 5rem;
+
+    .paga-como-quieras {
+        text-align: center;
+        background-color: $color-general;
+        color: $color-principal;
+        padding: 1rem;
+        margin-top: 7rem
+    }
+
+    .div-pago {
+        .tarjetas {
+            @include medidas (90px, 90px);
+            object-fit: cover;
+            margin-top: 5rem;
+        }
     }
 }
-/*estilo de sobre nosotros*/
 
 /*estilos de botones*/
 .boton {
     nav {
         ul {
             list-style: none;
+
             li {
                 .boton-dos {
                     background-color: $color-principal;
@@ -118,12 +137,13 @@ main {
                     color: $color-general;
                     display: block;
                     margin: auto;
+                    margin-top: 30rem;
                 }
 
                 .boton {
                     background-color: $color-principal;
-                    align-items: center;  
-                    margin-top: 15rem; 
+                    align-items: center;
+                    margin-top: 15rem;
                     display: block;
                     margin: auto;
                 }

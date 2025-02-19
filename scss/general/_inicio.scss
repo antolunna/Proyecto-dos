@@ -14,11 +14,11 @@
                     color: $color-general;
                     display: block;
                     margin: auto;
-                    background-color: $color-detalles-tres;
+                    background-color: $color-detalles;
                 }
 
                 .boton-dos {
-                    background-color: $color-detalles-tres;
+                    background-color: $color-detalles;
                     @include padding-margin (1rem, 5rem);
                     color: $color-general;
                     display: block;
@@ -32,16 +32,23 @@
 /*estilos de header*/
 header {
     .navbar {
+        background-color: $color-principal;
 
+        .navbar-toggler {
+            background-color: $color-detalles;
+        }
+
+        .collapse {
+            background-color: $color-principal;
+        }
         ul {
             li {
-
                 .boton-active:active {
                     background-color: $color-detalles-dos;
                 }
 
                 .boton-active:hover {
-                    background-color: $color-detalles-dos;
+                    background-color: $color-detalles;
                 }
 
             }
@@ -68,37 +75,79 @@ header {
 
     }
 
-    .banner-tablet {
+    .grid-banner-uno,
+    .grid-banner-dos,
+    .grid-banner-tres {
         display: none;
     }
 
     h1 {
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 1rem;
         padding: 2rem;
         background-color: $color-general;
-        color: whitesmoke;
+        color: $color-principal;
+    }
+
+    .grid-principal {
+        @include grid (grid, repeat(3, 1fr), 45% 45%);
+
+        .grid-banner-uno,
+        .grid-banner-dos,
+        .grid-banner-tres {
+            height: 60%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .grid-banner-uno,
+        .grid-banner-dos,
+        .grid-banner-tres {
+            grid-row: span 2;
+        }
     }
 }
 
 /*estilos de section*/
-.section-grid {
+.productos-destacados {
+    margin-top: 30%;
+    margin-bottom: 20%;
 
-    .div-img {
-        height: 100vh;
-        @include grid (grid, repeat(3, 1fr), 70% 70% 70%);
-        gap: 0.5rem;
-        padding: 0.5rem;
-        margin-bottom: 35%;
+    .figure-div {
+        .figure {
+            animation-duration: 1s;
+            max-width: 100%;
+            display: block;
+            margin: auto;
+        }
 
-        img {
-            @include medidas (40%, 40%);
-            object-fit: cover;
+    }
+
+    .figure-caption {
+        text-align: center;
+
+        span {
+            display: block;
         }
     }
 
-    .tres {
-        grid-column: span 2;
+    .nuevos-ingresos {
+        animation-duration: 2s;
+        text-align: center;
+        margin-top: 5rem;
+        padding: 2rem;
+        background-color: $color-general;
+        color: $color-principal;
     }
 
+    .carousel {
+        margin-top: 4rem;
+
+        .carousel-img {
+            display: block;
+            margin: auto;
+            height: 70%;
+            width: 70%;
+        }
+    }
 }

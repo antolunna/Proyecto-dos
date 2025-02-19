@@ -2,11 +2,27 @@
 @import "../utilidades/mixin";
 
 /*estilos de sobre nosotros*/
-.lorem {
-    h4 {
-        text-align: center;
-        span{
-            display: block;
+
+.nosotros {
+    height: 100vh;
+
+    .grid-nosotros {
+        @include grid (grid, repeat(1, 1fr), 50% 50%);
+        gap: 5rem;
+
+        .img-grid-nosotros {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 4rem;
+
+            .texto-grid {
+                text-align: center;
+
+                span {
+                    display: block;
+                }
+            }
         }
     }
 }

@@ -3,7 +3,7 @@
 
 /*estilos de productos*/
 main {
-    p {
+    .texto {
         text-align: center;
         background-color: $color-detalles;
         padding: 1rem;
@@ -12,12 +12,12 @@ main {
     }
 
     .ropa {
-        .img-dos, .img-cuatro, .img-cinco{
+        .img-dos,
+        .img-cuatro,
+        .img-cinco {
             @include medidas (30%, 32%);
             object-fit: cover;
             margin-bottom: 1rem;
-        
-
         }
     }
 }

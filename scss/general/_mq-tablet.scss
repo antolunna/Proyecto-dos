@@ -14,52 +14,38 @@
             display: none;
         }
 
-        h1 {
-            margin-top: 5rem;
-        }
+        .grid-principal {
+            gap: 0.5rem;
 
-        div {
-            .banner-tablet {
+            .grid-banner-uno,
+            .grid-banner-dos,
+            .grid-banner-tres {
                 display: block;
-                @include medidas (100%, 100%);
+            }
+
+            .grid-banner-uno,
+            .grid-banner-dos,
+            .grid-banner-tres {
+                height: 85%;
+                width: 100%;
                 object-fit: cover;
             }
 
-            img {
-                @include medidas (100%, 100%);
-                object-fit: cover;
+            h1 {
+                margin-top: 5rem;
             }
         }
-    }
-}
-
-/*estilos de section*/
-.section-grid {
-    div {
-        @include grid (grid, repeat(3, 1fr), 40% 40% 40%);
-
-
-        img {
-            @include medidas (100%, 100%);
-            object-fit: cover;
-        }
-
-    }
-
-    .tres {
-        grid-row: span 2;
-    }
-
-    .dos,
-    .uno {
-        grid-template-columns: span 1;
     }
 }
 
 /*estilos de productos*/
 main {
     .ropa {
-        .img-uno, .img-tres, .img-cuatro, .img-dos, .img-cinco {
+        .img-uno,
+        .img-tres,
+        .img-cuatro,
+        .img-dos,
+        .img-cinco {
             @include medidas (30%, 32%);
             object-fit: cover;
             margin: auto;
@@ -67,6 +53,7 @@ main {
             padding: 1rem;
         }
     }
+
 }
 
 /* estilo de contactanos*/
@@ -99,17 +86,12 @@ main {
     }
 }
 
-/*estilo de sobre nosotros*/
-.lorem {        
-        height: 100vh;
-
-}
-
 /*estilos de botones*/
 .boton {
     nav {
         ul {
             list-style: none;
+
             li {
                 .boton-dos {
                     background-color: $color-principal;
