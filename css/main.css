@@ -145,20 +145,16 @@ main .ropa .img-cinco {
 }
 
 /*estilos de sobre nosotros*/
-.nosotros {
-  height: 100vh;
-}
 .nosotros .grid-nosotros {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 50% 50%;
-  gap: 5rem;
+  gap: 1rem;
 }
 .nosotros .grid-nosotros .img-grid-nosotros {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  margin-bottom: 4rem;
 }
 .nosotros .grid-nosotros .img-grid-nosotros .texto-grid {
   text-align: center;
@@ -296,7 +292,6 @@ main .ropa .img-cinco {
   height: 20%;
   width: 20%;
   object-fit: cover;
-  margin-left: 38%;
 }
 .envios h3 {
   text-align: center;
@@ -306,7 +301,6 @@ main .ropa .img-cinco {
   height: 9%;
   width: 9%;
   object-fit: cover;
-  margin-left: 19%;
   margin-top: 5rem;
 }
 
@@ -417,13 +411,13 @@ main .ropa img {
   background-color: black;
   color: #d3d3d3;
   padding: 1rem;
-  margin-top: 7rem;
+  margin-top: 6rem;
 }
 .medios-de-pago .div-pago .tarjetas {
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
   object-fit: cover;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 /*estilos de botones*/

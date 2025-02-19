@@ -112,14 +112,14 @@ main {
         background-color: $color-general;
         color: $color-principal;
         padding: 1rem;
-        margin-top: 7rem
+        margin-top: 6rem
     }
 
     .div-pago {
         .tarjetas {
-            @include medidas (90px, 90px);
+            @include medidas (70px, 70px);
             object-fit: cover;
-            margin-top: 5rem;
+            margin-top: 3rem;
         }
     }
 }

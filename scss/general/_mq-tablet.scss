@@ -68,7 +68,6 @@ main {
         .img-medios {
             @include medidas (20%, 20%);
             object-fit: cover;
-            margin-left: 38%;
         }
     }
 
@@ -81,7 +80,6 @@ main {
     .tarjetas {
         @include medidas (9%, 9%);
         object-fit: cover;
-        margin-left: 19%;
         margin-top: 5rem;
     }
 }
